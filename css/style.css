@@ -2,11 +2,17 @@
 	margin: 0;
 }
 
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color:#f8f8f8;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	font-family: "Rubik";	
+	color: #212121;
 }
 
 .bold {
@@ -21,10 +27,13 @@ body {
 
 .first-screen {
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .header {
-	margin-top: 5rem;
+	margin-top: 4rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -33,5 +42,53 @@ body {
 ul {
 	display: flex;
 	list-style-type: none;
-	gap: 1rem;
+	gap: 2rem;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	font-size: 25px;
+}
+
+.title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.name h1 {
+	margin-bottom: 1.5rem;
+	font-weight: 100;
+}
+.name p {
+	font-size: 2rem;
+}
+
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	margin: 4rem 0;
+}
+
+ img {
+    border-radius: 5px; 
+}
+
+.nav-link a, .link {
+	display: inline-block;
+	vertical-align: top;
+	color:black;
+	text-decoration: none;
+	transition: color .15s linear;
+}
+
+.nav-link a:hover, .link:hover {
+	text-decoration: none;
+	color:darkgray;
+}
+
+.social {
+	display: flex;
+	gap: 2rem;	
 }
