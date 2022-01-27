@@ -92,3 +92,12 @@ ul {
 	display: flex;
 	gap: 2rem;	
 }
+
+.whatido {
+	margin-top: 6rem;
+}
+
+.whatido h1 {
+	font-size: 30px;
+	font-weight: 900;
+}
